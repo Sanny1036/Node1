@@ -32,7 +32,7 @@ http.createServer((request, response) => {
     let url = request.url;
     response.writeHeader(200, { "Content-Type": "text/html" });
     switch (url) {
-        case "/project":
+      case "/project":
           response.write(projectContent);
           response.end();
           break;
